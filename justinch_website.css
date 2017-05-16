@@ -1,0 +1,79 @@
+/* justinch_website */
+
+.overallcontainer {
+  border-top: 5px black solid;
+  border-bottom: 5px black solid;
+  padding: 40px 0px 40px 0px;
+  width: 70%;
+  margin: 0 auto;
+}
+
+.links {
+  text-align: center;
+  color: black;
+  font-family: sans-serif;
+}
+
+.links a {
+  color: black;
+}
+
+.links span:not(:first-child):before {
+    content: " | ";
+}
+
+#name {
+  padding: 0px;
+  text-align: center;
+}
+
+.contentcontaineram {
+  border-top: 0.5px black solid;
+  border-bottom: 0.5px black solid;
+  padding: 30px 40px 30px 40px;
+  text-align: center;
+}
+
+.contentcontainerp {
+  border-top: 0.5px black solid;
+  border-bottom: 0.5px black solid;
+  padding: 30px 40px;
+  width: 70%;
+  margin: 0 auto;
+}
+
+.content_am {
+  display: inline-block;
+  width: 50%;
+  vertical-align: top;
+  text-align: left;
+}
+
+.profilepic {
+  display: inline-block;
+  height: 200px;
+  width: 200px;
+  vertical-align: top;
+  text-align: right;
+  padding: 30px 40px;
+}
+
+.socialmedia {
+  padding-top: 20px;
+  text-align: center;
+  color: black;
+}
+
+.socialmedia a {
+  color: black;
+}
+
+.socialmedia a:not(:first-child):before {
+    content: " | ";
+}
+
+
+img {
+  text-align: center;
+  padding: 10px;
+}
