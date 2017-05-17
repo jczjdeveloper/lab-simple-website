@@ -1,65 +1,101 @@
 /* justinch_website */
 
-.overallcontainer {
-  border-top: 5px black solid;
-  border-bottom: 5px black solid;
-  padding: 40px 0px 40px 0px;
-  width: 70%;
-  margin: 0 auto;
+/* apply a natural box layout model to all elements, but allowing components to change */
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
 }
 
-.links {
-  text-align: center;
-  color: black;
+html, body {
+  margin: 0;
+  padding: 0;
   font-family: sans-serif;
 }
 
-.links a {
-  color: black;
+.wrapper {
+  margin-top: 30px;
+  margin-left: 50px;
+  margin-right: 50px;
+  border-top: 5px #000 solid;
+  border-bottom: 5px #000 solid;
 }
 
-.links span:not(:first-child):before {
-    content: " | ";
-}
+/* HEADER */
 
-#name {
-  padding: 0px;
+header ul {
+  padding-left: 0;
   text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  margin-top: 50px;
 }
 
-.contentcontaineram {
-  border-top: 0.5px black solid;
-  border-bottom: 0.5px black solid;
-  padding: 30px 40px 30px 40px;
+header ul li {
+  display: inline;
+}
+
+header ul li:first-child {
+  border-right: 1px #000000 solid;
+  padding-right: 10px;
+}
+
+header ul li:last-child {
+  border-left: 1px #000000 solid;
+  padding-left: 10px;
+}
+
+header nav .active {
+  font-style: italic;
+}
+
+header h1 {
   text-align: center;
+  text-transform: uppercase;
+  margin-top: 10px;
 }
 
-.contentcontainerp {
-  border-top: 0.5px black solid;
-  border-bottom: 0.5px black solid;
-  padding: 30px 40px;
-  width: 70%;
-  margin: 0 auto;
+main {
+  border-top: 1px #000 solid;
+  border-bottom: 1px #000 solid;
+  margin-left: 50px;
+  margin-right: 50px;
 }
 
-.content_am {
+main div {
+  padding: 40px;
+}
+
+main .about {
+  width: 60%;
   display: inline-block;
-  width: 50%;
-  vertical-align: top;
-  text-align: left;
+  float: left;
 }
 
-.profilepic {
+main .profile {
+  width: 40%;
   display: inline-block;
-  height: 200px;
-  width: 200px;
-  vertical-align: top;
-  text-align: right;
-  padding: 30px 40px;
+  float: right;
 }
+main .profile img {
+  width: 100%;
+  height: auto;
+  border: 1px #000000 solid;
+  padding: 5px;
+}
+
+.clearfloat {
+    clear: both;
+}
+
+/* FOOTER */
+
 
 .socialmedia {
-  padding-top: 20px;
+  padding-top: 30px;
+  padding-bottom: 50px;
   text-align: center;
   color: black;
 }
@@ -69,11 +105,5 @@
 }
 
 .socialmedia a:not(:first-child):before {
-    content: " | ";
-}
-
-
-img {
-  text-align: center;
-  padding: 10px;
+  content: " | ";
 }
